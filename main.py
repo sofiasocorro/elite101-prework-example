@@ -7,7 +7,7 @@ print('''Please choose from the following:
 2. Generate a table
 3. Sort numbers
 4. Exit ''')
-#choice = input('Please enter your choice: ')
+
 while True:
     choice = input('Please enter your choice: ')
     if choice == '1':
@@ -25,5 +25,5 @@ while True:
     else:
         fix = input('Please type 1, 2, 3, or 4: ')
 
-
+# add more details
     
