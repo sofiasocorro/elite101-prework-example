@@ -8,6 +8,10 @@ print('''Please choose from the following:
 3. Sort numbers
 4. Exit ''')
 
+
+# IDEA: 
+
+
 while True:
     choice = input('Please enter your choice: ')
     if choice == '1':
