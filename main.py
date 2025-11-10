@@ -9,11 +9,11 @@ CHATBOT: ELITE'S BANKING SYSTEM
 #WELCOME USER
 print(''''
 
--------------------------
-
-Welcome to Elite's Bank!
-      
--------------------------
+----------------------------
+|                          |
+| Welcome to Elite's Bank! |
+|                          |
+----------------------------
       
 ''')
 
@@ -29,7 +29,7 @@ def choices():
 
     Please choose from the following:
     1. Check balance
-    2. Add money
+    2. Deposit money
     3. Transfer money
     4. Exit 
         
