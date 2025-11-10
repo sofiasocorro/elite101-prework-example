@@ -29,6 +29,7 @@ savings_balance = 500
 
 while True:
     choice = input('Please enter your choice: ')
+
     if choice == '1':
         print('General balance: $', general_balance)
         print('Savings balance: $', savings_balance)
@@ -37,16 +38,21 @@ while True:
     if choice == '2':
         account_choose = input('Which account do you want to add money to? General or savings: ' )
         revised_choice = account_choose.lower()
+
         if account_choose == 'general':
             add_amount = input('How much money do you want to add to your general account? $')
             add_amount = float(add_amount)
             general_balance = general_balance + add_amount
             print('New general balance: $', general_balance)
+
         if account_choose == 'savings':
             add_amount = input('How much money do you want to add to your savings account? $')
             add_amount = float(add_amount)
             savings_balance = savings_balance + add_amount
             print('New savings balance: $', savings_balance)
+       
+        else:
+            correct_choice = input('Please choose between general or savings: ')
             
             
     if choice == '3':
@@ -60,7 +66,7 @@ while True:
             general_balance = general_balance + transfer_amount
             print('New general balance: $', general_balance)
             print('New savings balance: $', savings_balance)
-
+            
 
         if account_choose == 'savings':
             transfer_amount = input('How much money do you want to transfer to your savings account from general? $')
@@ -70,10 +76,13 @@ while True:
             print('New general balance: $', general_balance)
             print('New savings balance: $', savings_balance)
 
+        else:
+            correct_choice = input('Please choose between general or savings: ')
 
     if choice == '4':
         print('Goodbye, ' + name+ '! Have a great day!')
         break
+    
     else:
         fix = input('Please type 1, 2, 3, or 4: ')
 
