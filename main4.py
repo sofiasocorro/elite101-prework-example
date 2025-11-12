@@ -5,8 +5,13 @@ CHATBOT: ELITE'S BANKING SYSTEM
 
 '''
 
+from user_data import user_data 
+
+
+#print(user_data[0]['name'])
 
 #WELCOME USER
+
 print(''''
 
     ______________________________________________
@@ -21,10 +26,19 @@ print(''''
       
 ''')
 
-#USER'S NAME
-name = input("Please enter your name: ")
-age = input('Greetings ' + name + '! how old are you? ')
-print('Welcome ' + name + '!' ' I remember when I was ' + age+ ', How can I help you today? \n')
+#USERNAME
+user_name = input('Please enter your username: ')
+
+#connect to user_data for username, password, name, and money
+#username
+#password
+#greeting with name matched w data
+#update amount based on account
+#show options
+
+
+
+
 
 #USER'S CHOICE
 def choices():
@@ -41,7 +55,6 @@ def choices():
     |____________________________________________|
     ''')
 
-
 #SET GENERAL/SAVINGS BALANCE
 general_balance = 1500
 savings_balance = 500
@@ -52,6 +65,7 @@ def check_balance():
 
 
 def add_balance():
+    #ADD VISUAL
     account_choose = input('Which account do you want to add money to? General or savings: ' )
     revised_choice = account_choose.lower()
 
@@ -126,5 +140,3 @@ while True:
 
 
 
-
-    
