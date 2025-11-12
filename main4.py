@@ -60,10 +60,54 @@ general_balance = 1500
 savings_balance = 500
 
 def check_balance():
-    print('General balance: $', general_balance)
-    print('Savings balance: $', savings_balance)
+    print('''
+    ______________________________________________
+    |                                            |
+    |                   BALANCE                  |
+    |                                            |
+    |           General Balance: ''',general_balance,'''          |
+    |           Savings Balance: ''',savings_balance,'''           |
+    |                                            |
+    |                                            |
+    |                                            |
+    |____________________________________________|
+          ''')
+
+def add_balance():
+    #ADD VISUAL
+    account_choose = input('''
+        Which account do you want to add money to? General or savings: 
+        
+                           
+        ''')
+    revised_choice = account_choose.lower()
+
+    if revised_choice == 'general':
+        add_amount = input('How much money do you want to add to your general account? $')
+        add_amount = float(add_amount)
+        new_general_balance = general_balance + add_amount
+        print('New general balance: $', new_general_balance)
+
+    elif revised_choice == 'savings':
+        add_amount = input('How much money do you want to add to your savings account? $')
+        add_amount = float(add_amount)
+        new_savings_balance = savings_balance + add_amount
+        print('New savings balance: $', new_savings_balance)
+       
+    else:
+        correct_choice = input('Please choose between general or savings: ')
 
 
+
+
+
+
+
+
+
+
+
+'''
 def add_balance():
     #ADD VISUAL
     account_choose = input('Which account do you want to add money to? General or savings: ' )
@@ -83,7 +127,7 @@ def add_balance():
        
     else:
         correct_choice = input('Please choose between general or savings: ')
-
+'''
 
 
 def transfer_balance():
