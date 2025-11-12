@@ -27,7 +27,54 @@ print(''''
 ''')
 
 #USERNAME
-user_name = input('Please enter your username: ')
+
+'''
+display: please enter your username:
+
+
+
+
+
+
+
+
+'''
+#password = input('PASSWORD: ')
+def display_user_name():
+    print('''    
+    ______________________________________________
+    |                                            |
+    |                  LOG IN                    |
+    |                                            |
+    ''')
+
+
+display_user_name()
+
+
+def user_name():
+    user_name = input('             USERNAME:')
+    #print(user_name)
+    
+          
+user_name()
+
+def password():
+    password = input('             PASSWORD: ')
+    #print(password)
+
+password()
+
+
+
+
+'''    |         USERNAME:                 |
+    |                            |
+    |                                            |
+    |                                            |
+    |                                            |
+    |____________________________________________|
+    '''
 
 #connect to user_data for username, password, name, and money
 #username
@@ -63,7 +110,7 @@ def check_balance():
     print('''
     ______________________________________________
     |                                            |
-    |                   BALANCE                  |
+    |               ~~ BALANCE  ~~               |
     |                                            |
     |           General Balance: ''',general_balance,'''          |
     |           Savings Balance: ''',savings_balance,'''           |
@@ -75,27 +122,26 @@ def check_balance():
 
 def add_balance():
     #ADD VISUAL
-    account_choose = input(''''
-        ______________________________________________
-        |                                            |
-        |               DEPOSIT MONEY                |
-        |                                            |
-        |            1. Check balance                |
-        |            2. Deposit money                |
-        |            3. Transfer money               |
-        |            4. Exit                         |
-        |                                            |
-        |____________________________________________|                 
+    account_choice = input(''''
+    ______________________________________________
+    |                                            |
+    |             ~~ DEPOSIT MONEY ~~            |
+    |                                            |
+    |                Choose acount:              |
+    |                 1.Savings                  |
+    |                 2.General                  |
+    |                                            |
+    |                                            |
+    |____________________________________________|                 
         ''')
-    revised_choice = account_choose.lower()
 
-    if revised_choice == 'general':
+    if account_choice == '2':
         add_amount = input('How much money do you want to add to your general account? $')
         add_amount = float(add_amount)
         new_general_balance = general_balance + add_amount
         print('New general balance: $', new_general_balance)
 
-    elif revised_choice == 'savings':
+    elif account_choice == '1':
         add_amount = input('How much money do you want to add to your savings account? $')
         add_amount = float(add_amount)
         new_savings_balance = savings_balance + add_amount
