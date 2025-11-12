@@ -75,10 +75,17 @@ def check_balance():
 
 def add_balance():
     #ADD VISUAL
-    account_choose = input('''
-        Which account do you want to add money to? General or savings: 
-        
-                           
+    account_choose = input(''''
+        ______________________________________________
+        |                                            |
+        |               DEPOSIT MONEY                |
+        |                                            |
+        |            1. Check balance                |
+        |            2. Deposit money                |
+        |            3. Transfer money               |
+        |            4. Exit                         |
+        |                                            |
+        |____________________________________________|                 
         ''')
     revised_choice = account_choose.lower()
 
